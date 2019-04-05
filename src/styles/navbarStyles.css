@@ -1,5 +1,35 @@
 .navBar {
+  position: fixed;
   width: 100%;
-  background: #fa00a7;
+  background: #00000069;
   height: 90px;
+}
+
+.logo {
+  float: left;
+  max-width: 5%;
+  height: auto;
+  padding: 18px 35px;
+}
+
+#pageLinks a {
+  float: left;
+  padding: 35px 35px;
+  text-decoration: none;
+  font-family: Helvetica;
+  color: #ffffff;
+  font-size: 100%;
+}
+
+.socialMedia {
+  float: right;
+  padding: 30px 20px;
+  width: 1.5%;
+  height: auto;
+}
+
+#textHide {
+  width: 0px;
+  height: 0px;
+  opacity: 0;
 }

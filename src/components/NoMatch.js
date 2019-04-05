@@ -1,12 +1,16 @@
 import React from "react";
 import { Link, } from "react-router-dom";
-import { Header, } from "semantic-ui-react";
+import { Header, Icon, } from "semantic-ui-react";
 
 const NoMatch = () => (
-  <Header as="h3" textAlign="center">
-    Page not found. Return 
-    <Link to="/">Home</Link>
-  </Header>
+  <div>
+    <Icon name='home' size='huge' />
+    <Header as="h3" textAlign="center">
+      Oh no! looks like you've lost your way
+      404 Page not found.
+      <Link to="/">Home</Link>
+    </Header>
+  </div>
 )
 
 export default NoMatch;

@@ -2,7 +2,7 @@ import React from "react";
 import { Header, } from "semantic-ui-react";
 
 const Portfolio = () => (
-  <Header as="h3" textAlign="center">
+  <Header as="h3">
     Portfolio my guy
     apps i know how to use
     where i went to school
