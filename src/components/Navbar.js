@@ -18,10 +18,25 @@ class NavBar extends React.Component {
   }
 
   copyToClipboard = (e) => {
-    this.textArea.select();
+    e.preventDefault();
+    // Create an HTML object
+    let textField = document.createElement('textarea');
+    // Set the value of the HTML object to something
+    textField.innerText = 'maris.lizete.herrera@gmail.com';
+    // Put the textField on the HTML itself
+    document.body.appendChild(textField);
+    // Select the textfield
+    textField.select();
+    // Copy the value of the Textarea
     document.execCommand('copy');
-    e.target.focus();
-    this.setState({ copySuccess: 'Copied!' });
+    // Delete the textField from the browser
+    textField.remove();
+
+
+    // this.textArea.select();
+    // document.execCommand('copy');
+    // e.target.focus();
+    // this.setState({ copySuccess: 'Copied!' });
   };
 
   
@@ -44,21 +59,9 @@ class NavBar extends React.Component {
           <a href="https://www.linkedin.com/in/marisherrera/">
             <Image className='socialMedia' src={linkedinW}/>
           </a>
-          <div>
-            {
-              document.queryCommandSupported('copy') &&
-              <a>
-                <Image className='socialMedia' src={emailW} onClick={this.copyToClipboard}/>
-                {this.state.copySuccess}
-              </a>
-            }
-            <form>
-              <textarea id='textHide'
-                ref={(textarea) => this.textArea = textarea}
-                value='maris.lizete.herrera@gmail.com'
-              />
-            </form>
-          </div>
+          <a href="#" onClick={ this.copyToClipboard }>
+            <Image className='socialMedia' src={ emailW } />
+          </a>
           <a href="https://github.com/MarisLizeteHerrera">
             <Image className='socialMedia' src={githubW}/>
           </a>
