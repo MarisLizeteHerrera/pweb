@@ -3,13 +3,19 @@
   width: 100%;
   background: #00000069;
   height: 90px;
+  z-index: 100;
 }
 
-.logo {
+#header-logo {
   float: left;
-  max-width: 5%;
+  width: 117px;
   height: auto;
-  padding: 18px 35px;
+  padding-top: 12px;
+  padding-left: 28px;
+}
+
+#pageLinks a:first-of-type {
+  margin-left: 35px;
 }
 
 #pageLinks a {
@@ -18,20 +24,18 @@
   text-decoration: none;
   font-family: Helvetica;
   color: #ffffff;
-  font-size: 100%;
+  font-size: 110%;
+}
+
+.socialMedia:first-of-type {
+  margin-right: 24px;
 }
 
 .socialMedia {
+  color: rgb(255, 255, 255);
   float: right;
-  padding: 30px 20px;
+  padding: 33px 0px;
   width: 1.5%;
   height: auto;
-}
-
-#textHide {
-  width: -1px;
-  height: -1px;
-  opacity: 0;
-  /* display: none;
-  visibility: hidden; */
+  z-index: 90;  
 }
