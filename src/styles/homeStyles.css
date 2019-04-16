@@ -1,8 +1,49 @@
+#background {
+  background-color: #fdf2ed;
+  height: 5000px;
+}
+
 #homeBanner {
   max-width: 100%;
   height: auto;
 }
 
-/* #background {
-  background: #ff0000;
-} */
+#font {
+  text-align: center;
+  /* padding: 35px 35px; */
+  text-decoration: none;
+  font-family: Helvetica;
+  color: #000000;
+  font-size: 500%;
+}
+
+.serviceIcon {
+  color: #1a0502;
+  padding: 0px 90px;
+  /* width: 500%;
+  height: auto; */
+  /* z-index: 90;   */
+}
+
+#row {
+  width: 100%;
+  margin: 2%  20%;
+}
+.block {
+  width: 250px;
+  float: left;
+}
+
+#textRow {
+  width: 100%;
+  margin: 10%  20%;
+}
+
+.text {
+  width: 250px;
+  float: left;
+  font-family: Helvetica;
+  color: #000000;
+  font-size: 100%;
+  
+}

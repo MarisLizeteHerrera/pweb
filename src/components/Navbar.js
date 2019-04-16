@@ -1,13 +1,8 @@
 import React from 'react';
 import '../styles/navbarStyles.css';
 import { Link, } from 'react-router-dom';
-import { Image, Icon } from "semantic-ui-react";
+import { Image, Icon, Message } from "semantic-ui-react";
 import eyeWS from "../images/eyeLogo/eyeWS.png";
-// import emailW from "../images/logos/emailW.png";
-// import githubW from "../images/logos/githubW.png";
-// import instagramW from "../images/logos/instagramW.png";
-// import linkedinW from "../images/logos/linkedinW.png";
-// import twitterW from "../images/logos/twitterW.png";
 
 class NavBar extends React.Component {
 
@@ -38,48 +33,36 @@ class NavBar extends React.Component {
   
   render() {
     return(
-      <header className="navBar">
-        <Image id="header-logo" src={eyeWS} />
-        <nav id='pageLinks'>
-          <Link to='/'>H O M E</Link>
-          <Link to="/about">A B O U T</Link>
-          <Link to='/portfolio'>P O R T F O L I O</Link>
-        </nav>
-        <div id="social-icons">
-          <a href="https://twitter.com/Nyanimania?lang=en">
-            <Icon className='socialMedia' name='twitter' size='large' />
-          </a>
-          <a href="https://www.instagram.com/nyanimania/?hl=en">
-            <Icon className='socialMedia' name='instagram' size='large' />
-          </a>
-          <a href="https://www.linkedin.com/in/marisherrera/">
-            <Icon className='socialMedia' name='linkedin' size='large' />
-          </a>
-          <a href="#" onClick={ this.copyToClipboard }>
-            <Icon className='socialMedia' name='mail outline' size='large' />
-          </a>
-          <a href="https://github.com/MarisLizeteHerrera">
-            <Icon className='socialMedia' name='github' size='large' />
-          </a>
-
-
-          {/* <a href="https://twitter.com/Nyanimania?lang=en">
-            <Image className='socialMedia' src={twitterW} />
-          </a>
-          <a href="https://www.instagram.com/nyanimania/?hl=en">
-            <Image className='socialMedia' src={instagramW} />
-          </a>
-          <a href="https://www.linkedin.com/in/marisherrera/">
-            <Image className='socialMedia' src={linkedinW} />
-          </a>
-          <a href="#" onClick={ this.copyToClipboard }>
-            <Image className='socialMedia' src={emailW} />
-          </a>
-          <a href="https://github.com/MarisLizeteHerrera">
-            <Image className='socialMedia' src={githubW} />
-          </a> */}
-        </div>
-      </header>
+      <div>
+        <header className="navBar">
+          <Image id="header-logo" src={eyeWS} />
+          <nav id='pageLinks'>
+            <Link to='/'>H O M E</Link>
+            <Link to="/about">A B O U T</Link>
+            <Link to='/portfolio'>P O R T F O L I O</Link>
+          </nav>
+          <div id="social-icons">
+            <a href="https://twitter.com/Nyanimania?lang=en">
+              <Icon className='socialMedia' name='twitter' size='large' />
+            </a>
+            <a href="https://www.instagram.com/nyanimania/?hl=en">
+              <Icon className='socialMedia' name='instagram' size='large' />
+            </a>
+            <a href="https://www.linkedin.com/in/marisherrera/">
+              <Icon className='socialMedia' name='linkedin' size='large' />
+            </a>
+            <a href="#" onClick={ this.copyToClipboard }>
+              <Icon className='socialMedia' name='mail outline' size='large' />
+            </a>
+            <a href="https://github.com/MarisLizeteHerrera">
+              <Icon className='socialMedia' name='github' size='large' />
+            </a>
+          </div>
+        </header>
+        <Message id="alert" floating compact color='green'>
+          sucessfully coppied email to clipboard!
+        </Message>
+      </div>
     );
   }
 }

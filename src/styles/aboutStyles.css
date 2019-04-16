@@ -1,0 +1,21 @@
+.circle-container{
+  background-color: #00fff7;
+  padding: 200px 0;
+}
+.center{
+  margin: 0 auto;
+}
+.circle{
+  border-radius: 100%; /* Must Have */
+  width: 200px; /* Must Be the same as Height */
+  height: 200px; /* Must Be the same as Width */
+  background-color: #ff0000;
+}
+.shadow{
+  box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+  -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+  -webkit-transform: perspective(1px) translateZ(0);
+   transform: perspective(1px) translateZ(0);
+}

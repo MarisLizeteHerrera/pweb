@@ -39,3 +39,9 @@
   height: auto;
   z-index: 90;  
 }
+
+#alert {
+  z-index: 100;
+  position: fixed;
+  margin: 94px 0px 0px 1400px;
+}
