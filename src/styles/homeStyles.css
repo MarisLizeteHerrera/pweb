@@ -1,11 +1,13 @@
 #background {
-  background-color: #fdf2ed;
-  height: 5000px;
+  background-color: #fcede4;
+  height: 1200px;
+  box-shadow:  0 0 10px  rgba(0, 0, 0, 0.24);
 }
 
 #homeBanner {
   max-width: 100%;
   height: auto;
+  /* box-shadow:  0 0 10px  rgba(0, 0, 0, 0.24); */
 }
 
 #font {
@@ -13,12 +15,12 @@
   /* padding: 35px 35px; */
   text-decoration: none;
   font-family: Helvetica;
-  color: #000000;
+  color: #382929;
   font-size: 500%;
 }
 
 .serviceIcon {
-  color: #1a0502;
+  color: #382929;
   padding: 0px 90px;
   /* width: 500%;
   height: auto; */
@@ -36,14 +38,42 @@
 
 #textRow {
   width: 100%;
-  margin: 10%  20%;
+  margin: 7%  20% 0%  20%;
 }
 
 .text {
   width: 250px;
   float: left;
   font-family: Helvetica;
-  color: #000000;
-  font-size: 100%;
+  color: #382929;
+  font-size: 200%;
+  text-align: center;
   
+}
+#line {
+  margin: 4%  20% 0%  20%;
+}
+
+#bottomRow {
+  width: 100%;
+  margin: 0%  20% 0%  20%;
+}
+
+.bottomText {
+  width: 240px;
+  float: left;
+  font-family: Helvetica;
+  color: #5a5656;
+  font-size: 150%;
+  text-align: center;
+  list-style-type: none;
+}
+#basics {
+  margin: 15%  0% 0%  0%;
+}
+
+.basicsParagraph {
+  /* font-family: Helvetica; */
+  color: #000000;
+  font-size: 150%;
 }

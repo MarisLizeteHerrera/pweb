@@ -6,7 +6,7 @@ import eyeWS from "../images/eyeLogo/eyeWS.png";
 
 class NavBar extends React.Component {
 
-  state = { copySuccess: '', };
+  state = { copySuccess: '', showResults: false };
 
   copyToClipboard = (e) => {
     e.preventDefault();
@@ -30,6 +30,9 @@ class NavBar extends React.Component {
     // this.setState({ copySuccess: 'Copied!' });
   };
 
+  handleClick: function() {
+    this.setState({ showResults: true });
+  };
   
   render() {
     return(
@@ -52,7 +55,7 @@ class NavBar extends React.Component {
               <Icon className='socialMedia' name='linkedin' size='large' />
             </a>
             <a href="#" onClick={ this.copyToClipboard }>
-              <Icon className='socialMedia' name='mail outline' size='large' />
+              <Icon className='socialMedia' name='mail outline' size='large' onClick={this.handleClick} />
             </a>
             <a href="https://github.com/MarisLizeteHerrera">
               <Icon className='socialMedia' name='github' size='large' />
