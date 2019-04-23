@@ -1,5 +1,5 @@
 #background {
-  background-color: #fcede4;
+  background-color: #fdf3ed;
   height: 1200px;
   box-shadow:  0 0 10px  rgba(0, 0, 0, 0.24);
 }
@@ -20,7 +20,7 @@
 }
 
 .serviceIcon {
-  color: #382929;
+  color:  #382929;
   padding: 0px 90px;
   /* width: 500%;
   height: auto; */

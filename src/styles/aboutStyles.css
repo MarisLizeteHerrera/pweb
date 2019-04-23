@@ -1,21 +1,59 @@
-.circle-container{
-  background-color: #00fff7;
+
+#headerColor {
+  background-color: #fdf3ed;
+  position: relative;
+  height: 700px;
+  z-index: -2;
+}
+
+#circle-container {
   padding: 200px 0;
 }
-.center{
-  margin: 0 auto;
+
+.position {
+  position: relative;
+  bottom: 250px;
+  left: 1200px;
 }
-.circle{
+
+.circle {
   border-radius: 100%; /* Must Have */
-  width: 200px; /* Must Be the same as Height */
-  height: 200px; /* Must Be the same as Width */
-  background-color: #ff0000;
+  width: 260px; /* Must Be the same as Height */
+  height: 260px; /* Must Be the same as Width */
+  background-color: #FF737A;
+  /* #70aeff #382929 */
+  z-index: -1;
+  /* border: 20px solid white; */
 }
-.shadow{
-  box-shadow:  0 0 10px  rgba(0,0,0,0.6);
-  -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
-  -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
-  -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
-  -webkit-transform: perspective(1px) translateZ(0);
-   transform: perspective(1px) translateZ(0);
+
+.img {
+  top: 200px;
+  left: 1060px;
+  border: 20px solid white;
+}
+
+#name {
+  position: relative;
+  text-align: center;
+  bottom: 800px;
+  right: 300px;
+  font-family: timberline, sans-serif;
+  font-style: normal;
+  color: #382929;
+  font-size: 1000%;
+}
+#smallHeader {
+  position: relative;
+  text-align: center;
+  bottom: 940px;
+  right: 280px;
+  font-family: Helvetica;
+  color: #ca9999;
+  font-size: 300%;
+}
+
+#backgroundBanner {
+  max-width: 100%;
+  height: auto;
+  /* box-shadow:  0 0 10px  rgba(0, 0, 0, 0.24); */
 }

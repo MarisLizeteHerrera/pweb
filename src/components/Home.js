@@ -33,10 +33,7 @@ const Home = () => (
         <p>Digital Media</p>
       </div>
       <div className="text">
-        <p>Game Development
-          <br />
-          {/* Videogame Design 3d modeling */}
-        </p>
+        <p>Game Design <br /> & 3d Modeling</p>
       </div>
     </div>
     <br />

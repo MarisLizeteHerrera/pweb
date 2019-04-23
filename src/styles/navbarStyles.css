@@ -43,5 +43,17 @@
 #alert {
   z-index: 100;
   position: fixed;
-  margin: 94px 0px 0px 1400px;
+  top: 94px;
+  left: 1400px;
+  margin: 0px 0px 0px 0px;
+  animation: fadeOut 15s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
 }

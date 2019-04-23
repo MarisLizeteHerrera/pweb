@@ -3,6 +3,7 @@ import '../styles/navbarStyles.css';
 import { Link, } from 'react-router-dom';
 import { Image, Icon, Message } from "semantic-ui-react";
 import eyeWS from "../images/eyeLogo/eyeWS.png";
+import Toggle from './Toggle';
 
 class NavBar extends React.Component {
 
@@ -22,19 +23,10 @@ class NavBar extends React.Component {
     document.execCommand('copy');
     // Delete the textField from the browser
     textField.remove();
-
-
-    // this.textArea.select();
-    // document.execCommand('copy');
-    // e.target.focus();
-    // this.setState({ copySuccess: 'Copied!' });
-  };
-
-  handleClick: function() {
-    this.setState({ showResults: true });
   };
   
   render() {
+    const { showResults } = this.state
     return(
       <div>
         <header className="navBar">
@@ -54,17 +46,24 @@ class NavBar extends React.Component {
             <a href="https://www.linkedin.com/in/marisherrera/">
               <Icon className='socialMedia' name='linkedin' size='large' />
             </a>
-            <a href="#" onClick={ this.copyToClipboard }>
-              <Icon className='socialMedia' name='mail outline' size='large' onClick={this.handleClick} />
-            </a>
+
+            <Toggle>
+              {
+                ({on, toggle}) => 
+                (
+                  <a href="#" onClick={ this.copyToClipboard }>
+                  {on && <Message id="alert" floating compact color='green'>sucessfully coppied email to clipboard!</Message>}
+                    <Icon className='socialMedia' name='mail outline' size='large' onClick={toggle}/>
+                  </a>
+                )
+              }
+            </Toggle>
+
             <a href="https://github.com/MarisLizeteHerrera">
               <Icon className='socialMedia' name='github' size='large' />
             </a>
           </div>
         </header>
-        <Message id="alert" floating compact color='green'>
-          sucessfully coppied email to clipboard!
-        </Message>
       </div>
     );
   }
