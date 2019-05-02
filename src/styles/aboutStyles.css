@@ -1,8 +1,8 @@
 
 #headerColor {
-  background-color: #fdf3ed;
+  background-color: #fdf3ed86;
   position: relative;
-  height: 700px;
+  height: 680px;
   z-index: -2;
 }
 
@@ -42,6 +42,7 @@
   color: #382929;
   font-size: 1000%;
 }
+
 #smallHeader {
   position: relative;
   text-align: center;
@@ -53,7 +54,36 @@
 }
 
 #backgroundBanner {
+  position: relative;
   max-width: 100%;
   height: auto;
-  /* box-shadow:  0 0 10px  rgba(0, 0, 0, 0.24); */
+  z-index: -3;
+  bottom: 680px;
+}
+
+#aboutFont {
+  position: relative;
+  bottom: 600px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Helvetica;
+  color: #382929;
+  font-size: 500%;
+}
+
+#underline {
+  position: relative;
+  bottom: 600px;
+}
+
+.smallHeaders {
+  font-family: Helvetica;
+  color: #382929;
+}
+
+.aboutParagraph {
+  position: relative;
+  bottom: 600px;
+  color: #000000;
+  font-size: 150%;
 }

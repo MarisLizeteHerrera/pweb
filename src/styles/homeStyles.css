@@ -10,9 +10,8 @@
   /* box-shadow:  0 0 10px  rgba(0, 0, 0, 0.24); */
 }
 
-#font {
+#servicesFont {
   text-align: center;
-  /* padding: 35px 35px; */
   text-decoration: none;
   font-family: Helvetica;
   color: #382929;
@@ -22,14 +21,11 @@
 .serviceIcon {
   color:  #382929;
   padding: 0px 90px;
-  /* width: 500%;
-  height: auto; */
-  /* z-index: 90;   */
 }
 
 #row {
   width: 100%;
-  margin: 2%  20%;
+  margin: 2%  13%;
 }
 .block {
   width: 250px;
@@ -38,7 +34,7 @@
 
 #textRow {
   width: 100%;
-  margin: 7%  20% 0%  20%;
+  margin: 7%  20% 0%  13%;
 }
 
 .text {
@@ -51,12 +47,12 @@
   
 }
 #line {
-  margin: 4%  20% 0%  20%;
+  margin: 4%  15% 0%  15%;
 }
 
 #bottomRow {
   width: 100%;
-  margin: 0%  20% 0%  20%;
+  margin: 0%  20% 0%  14%;
 }
 
 .bottomText {
@@ -73,7 +69,6 @@
 }
 
 .basicsParagraph {
-  /* font-family: Helvetica; */
   color: #000000;
   font-size: 150%;
 }

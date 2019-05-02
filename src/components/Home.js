@@ -6,7 +6,7 @@ import '../styles/homeStyles.css';
 const Home = () => (
   <div id='background'>
     <Image id='homeBanner' src={trees}/>
-    <Header id="font">S E R V I C E S</Header>
+    <Header id="servicesFont">S E R V I C E S</Header>
     <div id="row">
       <div className="block">
         <Icon className='serviceIcon' size="huge" name="paint brush"/>
@@ -19,7 +19,10 @@ const Home = () => (
       </div>
       <div className="block">
         <Icon className='serviceIcon' size="huge" name="cubes"/>
-      </div>     
+      </div>
+      <div className="block">
+        <Icon className='serviceIcon' size="huge" name="language"/>
+      </div>       
     </div>
 
     <div id="textRow">
@@ -34,6 +37,9 @@ const Home = () => (
       </div>
       <div className="text">
         <p>Game Design <br /> & 3d Modeling</p>
+      </div>
+      <div className="text">
+        <p>Language</p>
       </div>
     </div>
     <br />
@@ -71,6 +77,10 @@ const Home = () => (
         <li>Autodesk Maya</li>
         <li>Zbrush</li>
       </ul>
+      <ul className="bottomText">
+        <li>Spanish</li>
+        <li>English</li>
+      </ul>
     </div>
 
     <div id='basics'>
@@ -97,18 +107,6 @@ const Home = () => (
           It makes everywhere look so gorgeous
           I listen to all kinds of music! I absolutely love music but the genres I listen to the most are
           pop-punk, indie, and Lo-fi.
-        </p>
-        <p className="basicsParagraph">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-          Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-          consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-          arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-          pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-          Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend
-          ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
-          nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-          augue. Curabitur ullamcorper ultricies nisi.
         </p>
       </Container>
     </div>
