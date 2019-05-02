@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Header, Image, Segment, Icon, } from "semantic-ui-react";
 import { Link, } from 'react-router-dom';
 import tableapp from "../images/tableapp.png";
@@ -17,9 +17,9 @@ const Portfolio = () => (
         TABLE-APP
       </p>
       <div className="underLine"/>
-      <a href="/">
+      <Link to="/">
         <Image id="portfolioPic" src={tableapp}/>
-      </a>
+      </Link>
       <p className="projectDesc">
         Table-App is an Application that would allow customers<br />
         an easier way to find and reserve tables at a nightclub.<br />
@@ -32,11 +32,9 @@ const Portfolio = () => (
         <Icon id="arrow" name='long arrow alternate right' size='small' />
       </p>
       <div className="underLine2"/>
-      <div className="pageLinks2">
-        <Link to="/">
-          CLICK ME
-        </Link>
-      </div>
+      <p id="projectLink">
+        CLICK ME
+      </p>
     </div>
     <br />
     <br />

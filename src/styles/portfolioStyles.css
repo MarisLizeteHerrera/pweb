@@ -34,7 +34,7 @@
   background-color: #412f2bd5;
   position: relative;
   height: 550px;
-  z-index: -2;
+  /* z-index: 1; */
 }
 
 .projectDesc {
@@ -67,7 +67,7 @@
   font-size: 150%;
 }
 
-.projectLink a {
+#projectLink {
   position: relative;
   text-align: center;
   padding: 0% 0% 0% 50%;
@@ -130,17 +130,4 @@
   -o-box-shadow: 0 0 1000px  rgb(255, 239, 239);
   -webkit-transform: perspective(1px) translateZ(0);
    transform: perspective(1px) translateZ(0);
-}
-
-.pageLinks2 a {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  padding: 0% 0% 0% 50%;
-  bottom: 350px;
-  font-family: adobe-caslon-pro, serif;
-  font-style: normal;
-  font-weight: 400;
-  color: #ff0000;
-  font-size: 300%;
 }
