@@ -1,13 +1,17 @@
 #background {
   background-color: #fdf3ed;
-  height: 1200px;
+  height: 600px;
+  position: relative;
+  bottom: 670px;
   box-shadow:  0 0 10px  rgba(0, 0, 0, 0.24);
 }
 
 #homeBanner {
   max-width: 100%;
   height: auto;
-  /* box-shadow:  0 0 10px  rgba(0, 0, 0, 0.24); */
+  bottom: 680px;
+  position: relative;
+  z-index: -3;
 }
 
 #servicesFont {
@@ -17,10 +21,22 @@
   color: #382929;
   font-size: 500%;
 }
+@media(max-width: 700px){
+  #servicesFont{
+    font-size: 300%;
+  }
+}
 
 .serviceIcon {
   color:  #382929;
   padding: 0px 90px;
+}
+@media(max-width: 700px){
+  .serviceIcon{
+    padding: 0px 90px;
+    width: 1.5%;
+    height: auto;
+  }
 }
 
 #row {
@@ -71,4 +87,61 @@
 .basicsParagraph {
   color: #000000;
   font-size: 150%;
+}
+
+/* about header test */
+
+
+#headerColor1 {
+  background-color: #fdf3ed86;
+  position: relative;
+  height: 680px;
+  z-index: -2;
+}
+
+#circle-container1 {
+  padding: 200px 0;
+}
+
+.position1 {
+  position: relative;
+  bottom: 250px;
+  left: 1200px;
+}
+
+.circle1 {
+  border-radius: 100%; /* Must Have */
+  width: 260px; /* Must Be the same as Height */
+  height: 260px; /* Must Be the same as Width */
+  background-color: #FF737A;
+  /* #70aeff #382929 */
+  z-index: -1;
+  /* border: 20px solid white; */
+}
+
+.img1 {
+  top: 200px;
+  left: 1060px;
+  border: 20px solid white;
+}
+
+#name1 {
+  position: relative;
+  text-align: center;
+  bottom: 800px;
+  right: 300px;
+  font-family: timberline, sans-serif;
+  font-style: normal;
+  color: #382929;
+  font-size: 1000%;
+}
+
+#smallHeader1 {
+  position: relative;
+  text-align: center;
+  bottom: 940px;
+  right: 280px;
+  font-family: Helvetica;
+  color: #ffffff;
+  font-size: 300%;
 }
