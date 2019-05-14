@@ -16,7 +16,7 @@ const Home = () => (
       <p id="smallHeader1">Artist Designer Coder </p>
     </div>
     <Image id='homeBanner' src={trees}/>
-    
+
     <div id='background'>
       <Header id="servicesFont">S E R V I C E S</Header>
       <div id="row">
@@ -78,7 +78,7 @@ const Home = () => (
           <li>SQL</li>
           {/* <li>Node.js</li> */}
           {/* <li>HTML</li> */}
-          <li>etc.(portfolio)</li>
+          <li>etc.(linkedin)</li>
         </ul>
         <ul className="bottomText">
           <li>Adobe Photoshop</li>
